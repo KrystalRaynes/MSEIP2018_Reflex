@@ -7,17 +7,20 @@ with open('setosa_v_versicolor.csv', newline='') as csvfile:
 	csvreader = csv.reader(csvfile, delimiter=',')
 
 	
-	for row in csvreader:
-		slength = row[0]
-		swidth = row[1]
-		plength = row[2]
-		pwidth = row[3]
-		species = row[4]
-		#shouldn't this be column?
-	int flower = 0
-	while flower < 100:
-		if csvreader[flower] [plength] >= 3:
-			#this means that the speciese is Iris Virginica, speciecs 1
+	for column in csvreader:
+		slength = column[0]
+		swidth = column[1]
+		plength = column[2]
+		pwidth = column[3]
+		species = column[4]
+	#int flower = 0
+	#while flower < 100:
+	#	if  >= 3 & cvsreader[flower] [pwidth] >= 1:
+			#this means that the species is Iris Virginica, speciecs 1
+		#else:
+			#this means that it is species -1
+
+		#flower++
 		
 		
 		
